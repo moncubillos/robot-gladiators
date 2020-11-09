@@ -1,16 +1,3 @@
-
-
-var playerName = window.prompt("What is your robot's name?");
-var playerHealth = 100;
-var playerAttack = 10;
-var playerMoney = 10;
-
-var enemyNames = ["Timmy", "Amy", "Bob"];
-var enemyHealth = 50;
-var enemyAttack = 12;
-
-
-
 var fight = function(enemyName) {
   while (playerHealth > 0 && enemyHealth > 0) {
     // ask player if they'd liked to fight or run
@@ -66,14 +53,3 @@ var fight = function(enemyName) {
     }
   }
 };
-
-
-for (var i = 0; i < enemyNames.length; i++) {
-  if (playerHealth > 0) {
-    window.alert("Welcome to Robot Gladiators! Round " + ( i + 1 ) );
-  }
-  var pickedEnemyName = enemyNames[i];
-  enemyHealth = 50;
-  // debugger;
-  fight(pickedEnemyName);
-}
